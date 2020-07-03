@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InputPhoneActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="Nhập số điện thoại của bạn"
+        android:textSize="18sp"
+        android:id="@+id/tvnhapso"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:layout_width="280dp"
+        android:background="#DDEBEE"
+        android:layout_below="@id/tvnhapso"
+        android:inputType="number"
+        android:id="@+id/edsodienthoai"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:layout_height="35dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="Số điện thoại không hợp lệ"
+        android:layout_below="@id/edsodienthoai"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:textColor="#F30606"
+        android:visibility="gone"
+        android:id="@+id/tvthongbaonhapsodienthoai"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_below="@id/edsodienthoai"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:id="@+id/tvnoidung"
+        android:text="Chúng tôi sẽ gửi mã xác thực đến số"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_below="@id/tvnoidung"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:text=" điện thoại của bạn"
+        android:layout_height="wrap_content" />
+    <Button
+        android:layout_width="280dp"
+        android:layout_below="@id/tvnoidung"
+        android:layout_centerHorizontal="true"
+        android:background="#DDEBEE"
+        android:id="@+id/btnnext"
+        android:layout_marginTop="60dp"
+        android:text="NEXT"
+        android:textColor="#050505"
+        android:layout_height="45dp" />
+</RelativeLayout>
